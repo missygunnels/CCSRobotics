@@ -1,4 +1,4 @@
-let content = "Bin There Dump That";
+let content = "Bin There, Dump That";
 var ele = '<span>' + content.split(' ').join('</span><br><span>') + '</span>';
 
 
