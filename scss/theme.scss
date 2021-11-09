@@ -1,0 +1,141 @@
+@use "sass:map";
+
+//@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Source+Sans+Pro:wght@200&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Glegoo:wght@400;700&family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Glegoo:wght@400;700&family=Kalam&family=Norican&display=swap');
+
+$theme-colors:(
+  "info": #f9a602,
+  "primary": #136A1B
+);
+$primary: #136A1B;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Glegoo", sans-serif;
+}
+
+.navbar-brand {
+  padding: 0 10px;
+  display: flex;
+}
+.tagline {
+  font-family: 'Glegoo', sans-serif;
+  font-size: 9.5em;
+}
+.intro {
+  font-family: "Kalam", sans-serif;
+  font-size: 1.75em;
+}
+.product-name {
+  font-family: 'Arvo', sans-serif;
+  color: $primary;
+  font-size: 3.8em;
+  line-height: 1;
+}
+.fill {
+  height: 100vh;
+  width: 100%;
+}
+.big-photo {
+  width: 50vh; 
+  height: 50vh; 
+}
+@media only screen and (min-width: 601px) {
+  #splash {
+    display: flex;
+    flex-direction: row;
+  }
+  .tagline {
+    display: block;
+    width: max-content;
+    margin: 40px;
+  }
+  .mobile-right-align > p {
+    display: inline-block;
+  }
+  .mobile-right-align {
+    padding: 15px;
+    display: block;
+    width: max-content;
+  }
+  .desktop-horizontal > .text-center{
+    display: block;
+    width: max-content;
+  }
+  .desktop-horizontal {
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-left: auto;
+    flex-direction: column;
+    width: max-content;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 8vh;
+  }
+  .robot-photo {
+    width: 75vh;
+    height: auto;
+    padding: 40px;
+  }
+  .intro {
+    font-family: "Kalam", sans-serif;
+    font-size: 1.6em;
+  }
+  .product-name {
+    font-family: 'Arvo', sans-serif;
+    color: $primary;
+    font-size: 5.65em;
+    line-height: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  
+  .fill {
+    height: 77.5vh;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  .big-photo {
+    width: 30vh;
+    height: 30vh;
+  }
+  .robot-photo {
+    width: 60vw;
+    height: auto;
+  }
+  #splash {
+    display: flex;
+    flex-direction: column;
+  }
+  .tagline {
+    font-family: 'Glegoo', sans-serif;
+    font-size: 2.8em;
+  }
+  .intro {
+    font-family: "Kalam", sans-serif;
+    font-size: 1.6em;
+  }
+  .product-name {
+    font-family: 'Arvo', sans-serif;
+    color: $primary;
+    font-size: 3.65em;
+    line-height: 1;
+  }
+  .tagline {
+    padding: 15px;
+  }
+  .mobile-right-align > p {
+    display: inline-block;
+  }
+  .mobile-right-align {
+    margin-left: auto;
+    margin-top: auto;
+    padding: 15px;
+    display: block;
+    width: max-content;
+  }
+
+}
