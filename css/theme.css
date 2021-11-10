@@ -10564,9 +10564,17 @@ body {
 }
 
 .video {
-  width: 90vw;
+  display: block;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
   height: auto;
   margin-left: auto;
+}
+
+#contact {
+  height: 20vh !important;
 }
 
 @media only screen and (min-width: 601px) {
@@ -10578,7 +10586,11 @@ body {
   .tagline {
     display: block;
     width: max-content;
-    margin: 40px;
+    padding: 52px;
+  }
+
+  .page {
+    padding: 52px;
   }
 
   .mobile-right-align > p {
@@ -10626,11 +10638,21 @@ body {
     line-height: 1;
   }
 }
+#info-btn {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+}
+
 @media only screen and (max-width: 600px) {
   .fill {
     height: 78.5vh;
     width: 100%;
     margin-bottom: 5vh;
+  }
+
+  .page {
+    padding: 27px;
   }
 
   .big-photo {
