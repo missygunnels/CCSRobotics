@@ -10574,6 +10574,22 @@ body {
 }
 
 @media only screen and (min-width: 601px) {
+  h1, .h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    max-width: 35rem !important;
+  }
+
+  .card-text {
+    font-size: 5em;
+  }
+
   #splash {
     display: flex;
     flex-direction: row;
